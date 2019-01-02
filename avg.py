@@ -27,8 +27,9 @@ ax = avg_int.plot(
     title ="Mean interest rate by loan purpose", 
     color=[plt.cm.Paired(np.arange(len(avg_int)))])
 
-#turn on grid and label each axis
+#turn on grid, set it to background and label each axis
 ax.grid('on', which='major', axis='y')
+ax.set_axisbelow(True)
 ax.set_xlabel("purpose")
 ax.set_ylabel("mean(int_rate)")
 
